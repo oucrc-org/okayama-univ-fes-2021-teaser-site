@@ -62,6 +62,14 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
 /* 色を修正 */
 .flip-card__top,
 .flip-card__bottom,

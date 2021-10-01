@@ -14,8 +14,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: git clone https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/smpny7/okayama-univ-fes-2021-countdown
+      - name: set config
+        run: git config --global user.email "action@github.com" && git config --global user.name "smpny7"
       - name: set remote
-        run: cd okayama-univ-fes-2021-countdown && git remote add upstream https://github.com/oucrc-org/okayama-univ-fes-2021-countdown
+        run: cd okayama-univ-fes-2021-countdown && git reset --hard a80c0503 && git remote add upstream https://github.com/oucrc-org/okayama-univ-fes-2021-countdown
       - name: fetch
         run: cd okayama-univ-fes-2021-countdown && git fetch upstream
       - name: checkout
@@ -25,4 +27,4 @@ jobs:
       - name: push
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        run: cd okayama-univ-fes-2021-countdown && git push https://smpny7:${PERSONAL_ACCESS_TOKEN}@github.com/smpny7/okayama-univ-fes-2021-countdown
+        run: cd okayama-univ-fes-2021-countdown && git push -f https://smpny7:${PERSONAL_ACCESS_TOKEN}@github.com/smpny7/okayama-univ-fes-2021-countdown

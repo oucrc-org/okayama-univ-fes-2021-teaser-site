@@ -3,13 +3,21 @@ export default {
   head: {
     title: '岡山大学祭2021 | 笑顔満祭岡大祭 〜心機一転しちゃいな祭〜',
     htmlAttrs: {
-      lang: 'ja'
+      lang: 'ja',
+      prefix: 'og: http://ogp.me/ns#'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:site_name', property: 'og:site_name', content: '岡山大学祭2021 | 笑顔満祭岡大祭 〜心機一転しちゃいな祭〜' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://oufes2021.com' },
+      { hid: 'og:title', property: 'og:title', content: '岡山大学祭2021' },
+      { hid: 'og:description', property: 'og:description', content: '笑顔満祭岡大祭 〜心機一転しちゃいな祭〜' },
+      { hid: 'og:image', property: 'og:image', content: 'https://raw.githubusercontent.com/smpny7/okayama-univ-fes-2021-countdown/main/ogp.jpg' },
+      { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

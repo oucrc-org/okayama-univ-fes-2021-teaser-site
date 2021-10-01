@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-primary text-white w-screen h-screen flex flex-col gap-6 justify-center items-center">
+  <main class="bg-themeColor text-white w-screen h-screen flex flex-col gap-6 justify-center items-center">
     <Countdown />
   </main>
 </template>

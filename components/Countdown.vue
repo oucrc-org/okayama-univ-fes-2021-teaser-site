@@ -8,7 +8,7 @@
     </div>
     <div v-else>少々お待ちください...</div>
     <p class='text-white fixed bottom-2 lg:bottom-3 right-2 lg:right-4 text-xs lg:text-sm tracking-widest'
-       style="font-family: 'Noto Sans JP', sans-serif !important; font-weight: 200 !important">笑顔満祭岡大祭　〜心機一転しちゃいな祭〜</p>
+       style="font-family: 'Noto Sans JP', sans-serif !important; font-weight: 300 !important">笑顔満祭岡大祭　〜心機一転しちゃいな祭〜</p>
   </div>
 </template>
 

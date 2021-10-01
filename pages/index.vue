@@ -29,7 +29,7 @@ export default {
       duration: 1000,
       strokeWidth: 0.2,
       color: '#fff',
-      trailWidth: 0.2,
+      trailWidth: 0.1,
       trailColor: '#128dea',
       text: {
         style: {

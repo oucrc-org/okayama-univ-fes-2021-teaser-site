@@ -1,9 +1,12 @@
 <template>
-  <div class="text-white">
-    <div v-if="enableCountDown">
-      <client-only><FlipCountdown :deadline="openDateString" :labels="{ days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds' }" /></client-only>
+  <div class='text-white'>
+    <div v-if='enableCountDown'>
+      <client-only>
+        <FlipCountdown :deadline='openDateString'
+                       :labels="{ days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds' }" />
+      </client-only>
     </div>
-    <div v-else>オープン!</div>
+    <div v-else>少々お待ちください...</div>
   </div>
 </template>
 
@@ -39,23 +42,13 @@ export default {
     return {
       openDateString,
       milliSecondsUntilOpen,
-      enableCountDown: milliSecondsUntilOpen > 0,
+      enableCountDown: milliSecondsUntilOpen > 0
     }
   },
   mounted() {
     this.warnAboutEnv()
-    this.closeCountDown()
   },
   methods: {
-    closeCountDown() {
-      // 差分を利用して、オープンの瞬間にカウントダウンを非表示にする
-      // 重要: アロー関数はthisの参照先が変わるので使わないこと
-      if (this.enableCountDown) {
-        setTimeout(function () {
-          window.location.reload()
-        }, this.milliSecondsUntilOpen)
-      }
-    },
     warnAboutEnv() {
       if (isEnvValid) {
         console.debug('オープン日時を環境変数から設定しました')
@@ -63,8 +56,8 @@ export default {
         openDateEnv ? console.debug(`環境変数はYYYY-MM-DD HH:mm:ssで設定してください: ${openDateEnv}`) : console.debug('環境変数が設定されていません')
       }
       console.debug(`オープン日時: ${this.openDateString}`)
-    },
-  },
+    }
+  }
 }
 </script>
 

@@ -10,6 +10,9 @@ module.exports = {
         // accentColor: '#F68014',
         secondaryColor: '#7BBDED',
       },
+      fontFamily: {
+        'japanese': ['Noto Sans JP', 'sans-serif']
+      },
       letterSpacing: {
         extraWidest: '.25rem',
       },

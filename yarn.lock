@@ -6962,6 +6962,11 @@
   "resolved" "https://registry.npmjs.org/p-try/-/p-try-2.2.0.tgz"
   "version" "2.2.0"
 
+"pagepiling.js@^1.5.6":
+  "integrity" "sha512-FhiVFGrIOJ135YSDbfPamH+Llz9imQ0Z1K1lUxPiZHziXtOXgx74Jr44a+7IrSuqQxp1IYDhQoMN2pKmpG1kMQ=="
+  "resolved" "https://registry.npmjs.org/pagepiling.js/-/pagepiling.js-1.5.6.tgz"
+  "version" "1.5.6"
+
 "pako@~1.0.5":
   "integrity" "sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw=="
   "resolved" "https://registry.npmjs.org/pako/-/pako-1.0.11.tgz"

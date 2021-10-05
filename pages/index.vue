@@ -1,20 +1,15 @@
 <template>
-  <main>
+  <main id="pagepiling">
     <div id='splash'>
       <div id='splash_text'></div>
       <div class='loader_cover loader_cover-up'></div>
       <div class='loader_cover loader_cover-down'></div>
     </div>
     <section
-      class='box bg-themeColor text-white flex flex-col justify-center items-center height-setter'>
+      class='section bg-themeColor text-white flex flex-col justify-center items-center height-setter'>
       <Countdown />
     </section>
     <TimeLine />
-    <section class='box bg-themeColor text-white px-8 max-w-3xl mx-auto'>
-      <a v-for='n in 3' :key='n' href='#' class='block'>
-        Twitter
-      </a>
-    </section>
   </main>
 </template>
 

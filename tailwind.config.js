@@ -7,7 +7,11 @@ module.exports = {
       colors: {
         themeColor: '#0071C5',
         themeLight: '#1D8CDE',
-        accentColor: '#F68014',
+        // accentColor: '#F68014',
+        secondaryColor: '#7BBDED',
+      },
+      letterSpacing: {
+        extraWidest: '.25rem',
       },
       spacing: {
         30: '7.5rem',

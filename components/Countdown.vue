@@ -7,8 +7,10 @@
       </client-only>
     </div>
     <div v-else>少々お待ちください...</div>
-    <p class='text-white fixed bottom-3 right-3 lg:right-4 text-xs lg:text-sm tracking-widest text-right'
-       style="font-family: 'Noto Sans JP', sans-serif !important; font-weight: 300 !important"><span class='text-base lg:text-lg tracking-widest'>笑顔満祭岡大祭</span><br>〜心機一転しちゃいな祭〜</p>
+    <div class='scrolldown'><span>Scroll</span></div>
+<!--    <p class='text-white fixed bottom-3 right-3 lg:right-4 text-xs lg:text-sm tracking-widest text-right'-->
+<!--       style="font-family: 'Noto Sans JP', sans-serif !important; font-weight: 300 !important"><span-->
+<!--      class='text-base lg:text-lg tracking-widest'>笑顔満祭岡大祭</span><br>〜心機一転しちゃいな祭〜</p>-->
   </div>
 </template>
 
@@ -102,5 +104,53 @@ export default {
 .flip .flip-card__back,
 .flip .flip-card__back-bottom {
   display: none !important;
+}
+
+.scrolldown {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 50px;
+}
+
+.scrolldown span {
+  position: absolute;
+  left: -22px;
+  top: -28px;
+  color: #FFF;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+/* 線の描写 */
+.scrolldown::after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  top: 0;
+  /*線の形状*/
+  width: 1px;
+  height: 500px;
+  background: #eee;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
 }
 </style>

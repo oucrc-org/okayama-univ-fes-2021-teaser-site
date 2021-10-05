@@ -1,3 +1,5 @@
+import webpack from 'webpack'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -16,14 +18,18 @@ export default {
       { hid: 'og:url', property: 'og:url', content: 'https://oufes2021.com' },
       { hid: 'og:title', property: 'og:title', content: '岡山大学祭2021' },
       { hid: 'og:description', property: 'og:description', content: '笑顔満祭岡大祭 〜心機一転しちゃいな祭〜' },
-      { hid: 'og:image', property: 'og:image', content: 'https://raw.githubusercontent.com/smpny7/okayama-univ-fes-2021-countdown/main/ogp.jpg' },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://raw.githubusercontent.com/smpny7/okayama-univ-fes-2021-countdown/main/ogp.jpg'
+      },
       { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js' },
+      { src: 'https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js' }
     ]
   },
 
@@ -43,16 +49,24 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'nuxt-webfontloader',
+    'nuxt-webfontloader'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    vendor: ['jquery', 'bootstrap', 'jquery-scrollify'],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      })
+    ]
   },
 
   env: {
@@ -64,5 +78,5 @@ export default {
     google: {
       families: ['Roboto:100,300,400,500,700,900', 'Noto+Sans+JP:100,300,400,500,700,900']
     }
-  },
+  }
 }

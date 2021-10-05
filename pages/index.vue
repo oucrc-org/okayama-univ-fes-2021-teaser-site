@@ -1,20 +1,31 @@
 <template>
-  <main class='bg-themeColor text-white w-screen flex flex-col gap-6 justify-center items-center height-setter'>
+  <main>
     <div id='splash'>
       <div id='splash_text'></div>
       <div class='loader_cover loader_cover-up'></div>
       <div class='loader_cover loader_cover-down'></div>
     </div>
-    <Countdown />
+    <section
+      class='box bg-themeColor text-white flex flex-col justify-center items-center height-setter'>
+      <Countdown />
+    </section>
+    <TimeLine />
+    <section class='box bg-themeColor text-white px-8 max-w-3xl mx-auto'>
+      <a v-for='n in 3' :key='n' href='#' class='block'>
+        Twitter
+      </a>
+    </section>
   </main>
 </template>
 
 <script>
 import Countdown from '@/components/Countdown.vue'
+import TimeLine from '@/components/TimeLine.vue'
 
 export default {
   components: {
-    Countdown
+    Countdown,
+    TimeLine
   },
   mounted() {
     const setFillHeight = () => {

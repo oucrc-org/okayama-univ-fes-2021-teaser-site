@@ -6,12 +6,32 @@
       <h1 class='fadein-slide text-white text-4xl text-right tracking-extraWidest mt-2 pr-4 md:pr-0'>笑顔満祭岡大祭</h1>
       <p class='fadein-slide text-white text-right text-base tracking-widest mt-3 pr-4 md:pr-0'>〜心機一転しちゃいな祭〜</p>
       <ul class='timeline'>
-        <li v-for='m in 3' :key='m' class='fadein'>
+        <li class='fadein'>
           <dl>
             <dt class='text-themeColor font-medium'>11/7（土）</dt>
             <h2 class='text-themeColor text-2xl tracking-widest font-bold mt-1'>プロコンサート</h2>
-            <dd class='text-sm text-gray-500 mt-3'>
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            <dd class='text-sm text-gray-500 mt-3 font-medium tracking-widest leading-8'>
+              今年度のプロコンサートは <b class='font-semibold'>お笑い芸人3組</b> をお呼びするプロライブとなっております。現在テレビで引っ張りだこの著名な若手芸人の方々にネタを披露していただきます。<b class='font-semibold'>誰でも無料で視聴</b> することができ、普通のテレビ番組では見ることのできないような <b class='font-semibold'>岡山大学ならではの内容</b> も企画しています。貴重な機会だと思いますので、ぜひともご覧ください！
+            </dd>
+          </dl>
+          <span class='border-line'></span>
+        </li>
+        <li class='fadein'>
+          <dl>
+            <dt class='text-themeColor font-medium'>11/8〜15</dt>
+            <h2 class='text-themeColor text-2xl tracking-widest font-bold mt-1'>カウントダウン企画</h2>
+            <dd class='text-sm text-gray-500 mt-3 font-medium tracking-widest leading-8'>
+              プロコンサートからステージ企画の間の約1週間も皆様に楽しんでいただけるようにカウントダウン企画を開催します。毎日岡山で活躍中の <b class='font-semibold'>アナウンサーの方の企画紹介動画</b> を投稿するほか、特設サイトでは <b class='font-semibold'>カウントダウンスタンプラリー</b> を開催します。毎日出題されるクイズに正解すると <b class='font-semibold'>豪華景品をプレゼント</b>！ぜひご参加ください！
+            </dd>
+          </dl>
+          <span class='border-line'></span>
+        </li>
+        <li class='fadein'>
+          <dl>
+            <dt class='text-themeColor font-medium'>11/16, 17（火・水）</dt>
+            <h2 class='text-themeColor text-2xl tracking-widest font-bold mt-1'>校友会団体企画</h2>
+            <dd class='text-sm text-gray-500 mt-3 font-medium tracking-widest leading-8'>
+              二日間に渡って行われるステージ企画では、<b class='font-semibold'>岡山大学の部活やサークルによるパフォーマンス</b> を行います。合唱や演奏といったものだけではなくチアリーダーの演技や武道系クラブの演舞など幅広いパフォーマンスを披露します。こうしたコロナ禍だからこそ岡大生の溢れる想いやエネルギーを存分に感じていただければと思います！パフォーマンスの様子は <b class='font-semibold'>18:00〜21:00</b> に <b class='font-semibold'>岡山大学校友会公式YouTubeで生配信予定</b> です。ぜひご自宅でお楽しみください。
             </dd>
           </dl>
           <span class='border-line'></span>
@@ -19,7 +39,7 @@
       </ul>
       <div class='px-4'>
         <a href='https://twitter.com/gakusai_2021_' target='_blank' rel='noopener noreferrer'
-           class='block px-5 md:px-10 py-10 text-white text-2xl relative'>
+           class='block px-5 md:px-10 py-10 text-white text-2xl relative font-extralight'>
           Twitter
           <img class='absolute right-4 md:right-8 top-9 inline-block w-10' src='/circle_arrow.png' alt='開く'>
         </a>
@@ -27,7 +47,7 @@
         <hr class='bg-white'>
 
         <a href='https://www.instagram.com/gakusai_2021_' target='_blank' rel='noopener noreferrer'
-           class='block px-5 md:px-10 py-10 text-white text-2xl relative'>
+           class='block px-5 md:px-10 py-10 text-white text-2xl relative font-extralight'>
           Instagram
           <img class='absolute right-4 md:right-8 top-9 inline-block w-10' src='/circle_arrow.png' alt='開く'>
         </a>
@@ -35,15 +55,15 @@
         <hr class='bg-white'>
 
         <a href='https://kmtk-256893.wixsite.com/my-site' target='_blank' rel='noopener noreferrer'
-           class='block px-5 md:px-10 py-10 text-white text-2xl relative'>
+           class='block px-5 md:px-10 py-10 text-white text-2xl relative font-extralight'>
           <span class='font-japanese'>学祭実行委員会</span> HP
           <img class='absolute right-4 md:right-8 top-9 inline-block w-10' src='/circle_arrow.png' alt='開く'>
         </a>
 
         <hr class='bg-white'>
       </div>
-      <p class='md:text-lg text-white text-center font-japanese mb-10 mt-12'>皆様のご来場お待ちしております</p>
-      <p class='text-xs text-white text-center font-japanese font-thin mb-3 md:mb-5 mt-16'>岡山大学校友会 x 学祭実行委員会</p>
+      <p class='md:text-lg text-white text-center font-japanese font-light mb-10 mt-12'>皆様のご来場お待ちしております</p>
+      <p class='text-xs text-white text-center font-japanese font-extralight font-thin mb-3 md:mb-5 mt-16'>(c) 岡山大学校友会 x 学祭実行委員会</p>
     </div>
   </section>
 </template>
@@ -132,7 +152,7 @@ export default {
   background: #FFFFFF;
   width: 92%;
   margin: 36px 0 5px;
-  padding: 70px 30px 0;
+  padding: 70px 26px 0 30px;
 }
 
 .timeline li {

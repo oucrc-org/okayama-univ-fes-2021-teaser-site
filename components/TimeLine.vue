@@ -11,7 +11,7 @@
             <dt class='text-themeColor font-medium'>11/7（土）</dt>
             <h2 class='text-themeColor text-2xl tracking-widest font-bold mt-1'>プロコンサート</h2>
             <dd class='text-sm text-gray-500 mt-3 font-medium tracking-widest leading-8'>
-              今年度のプロコンサートは <b class='font-semibold'>お笑い芸人3組</b> をお呼びするプロライブとなっております。現在テレビで引っ張りだこの著名な若手芸人の方々にネタを披露していただきます。<b class='font-semibold'>誰でも無料で視聴</b> することができ、普通のテレビ番組では見ることのできないような <b class='font-semibold'>岡山大学ならではの内容</b> も企画しています。貴重な機会だと思いますので、ぜひともご覧ください！
+              今年度のプロコンサートは お笑い芸人3組をお呼びするプロライブとなっております。現在テレビで引っ張りだこの <b class='font-semibold'>ハナコ、四千頭身、ぼる塾</b> の方々にネタを披露していただきます。<b class='font-semibold'>誰でも無料で視聴</b> することができ、普通のテレビ番組では見ることのできないような <b class='font-semibold'>岡山大学ならではの内容</b> も企画しています。貴重な機会だと思いますので、ぜひともご覧ください！
             </dd>
           </dl>
           <span class='border-line'></span>
@@ -54,7 +54,7 @@
 
         <hr class='bg-white'>
 
-        <a href='https://kmtk-256893.wixsite.com/my-site' target='_blank' rel='noopener noreferrer'
+        <a href='https://kmtk-256893.wixsite.com/gakusaitouzitu2021' target='_blank' rel='noopener noreferrer'
            class='block px-5 md:px-10 py-10 text-white text-2xl relative font-extralight'>
           <span class='font-japanese'>学祭実行委員会</span> HP
           <img class='absolute right-4 md:right-8 top-9 inline-block w-10' src='/circle_arrow.png' alt='開く'>

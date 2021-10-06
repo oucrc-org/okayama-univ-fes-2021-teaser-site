@@ -30,6 +30,7 @@ export default {
     window.addEventListener('resize', setFillHeight)
     setFillHeight()
 
+    // noinspection JSUnresolvedVariable
     const bar = new ProgressBar.Line(splash_text, {
       easing: 'easeInOut',
       duration: 1000,
@@ -51,6 +52,7 @@ export default {
         autoStyleContainer: false
       },
       step(_, bar) {
+        // noinspection JSUnresolvedFunction
         bar.setText(Math.round(bar.value() * 100) + ' %')
       }
     })
@@ -81,6 +83,10 @@ html {
 
 .height-setter {
   min-height: 100vh;
+}
+
+/*noinspection ALL*/
+.height-setter {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
@@ -125,11 +131,13 @@ html {
   transform-origin: center bottom;
 }
 
+/*noinspection ALL*/
 .coveranime {
   transform: scaleY(0);
   transition: 5s;
 }
 
+/*noinspection ALL*/
 .fadeout {
   animation: fadeOut 1s;
   animation-fill-mode: both;

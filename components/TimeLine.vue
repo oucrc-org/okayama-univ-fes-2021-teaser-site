@@ -1,5 +1,5 @@
 <template>
-  <section id='scroll-box' class='section pp-scrollable bg-themeColor hide-scroll-bar'>
+  <section id='scroll-box' class='section pp-scrollable bg-themeColor hide-scroll-bar overflow-x-hidden'>
     <div class='max-w-3xl mx-auto'>
       <p class='fadein-slide text-secondaryColor text-right font-bold tracking-widest pr-4 md:pr-0 mt-12'>2021年
         岡山大学祭テーマ</p>
@@ -34,7 +34,7 @@
 
         <hr class='bg-white'>
 
-        <a href='https://kmtk-256893.wixsite.com/gakusaitouzitu2021' target='_blank' rel='noopener noreferrer'
+        <a href='https://kmtk-256893.wixsite.com/my-site' target='_blank' rel='noopener noreferrer'
            class='block px-5 md:px-10 py-10 text-white text-2xl relative'>
           <span class='font-japanese'>学祭実行委員会</span> HP
           <img class='absolute right-4 md:right-8 top-9 inline-block w-10' src='/circle_arrow.png' alt='開く'>
@@ -42,7 +42,7 @@
 
         <hr class='bg-white'>
       </div>
-      <p class='text-sm md:text-lg text-white text-center font-japanese my-4 md:mt-12'>皆様のご来場お待ちしております</p>
+      <p class='md:text-lg text-white text-center font-japanese mb-10 mt-12'>皆様のご来場お待ちしております</p>
       <p class='text-xs text-white text-center font-japanese font-thin mb-3 md:mb-5 mt-16'>岡山大学校友会 x 学祭実行委員会</p>
     </div>
   </section>
@@ -52,37 +52,34 @@
 export default {
   name: 'TimeLine',
   mounted() {
-    $(window).on('load', function() {
+    $(window).on('load', () => {
       require('pagepiling.js')
       require('pagepiling.js/dist/jquery.pagepiling.css')
       $('#pagepiling').pagepiling({
         navigation: null,
+        scrollingSpeed: 900,
         onLeave() {
           fadeInByScroll(true)
         }
       })
     })
 
-    //線が伸びるための設定を関数でまとめる
     function ScrollTimelineAnime() {
-      $('.timeline li').each(function() {// それぞれのli要素の
-        var elemPos = $(this).offset().top// 上からの高さ取得
-        var scroll = $(window).scrollTop()// スクロール値取得
-        var windowHeight = $(window).height()// windowの高さ取得
-        var startPoint = 250 //線をスタートさせる位置を指定※レイアウトによって調整してください
+      $('.timeline li').each(function() {
+        const elemPos = $(this).offset().top
+        const scroll = $(window).scrollTop()
+        const windowHeight = $(window).height()
+        const startPoint = 250
         if (scroll >= elemPos - windowHeight - startPoint) {
-          var H = $(this).outerHeight(true)//liの余白と高さを含めた数値を取得
-          console.log(H)
-          //スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す
-          var percent = (scroll + startPoint - elemPos) / (H / 2) * 100//liの余白と高さの半分で線を100％に伸ばす
+          const H = $(this).outerHeight(true)
+          let percent = (scroll + startPoint - elemPos) / (H / 2) * 100
 
-          // 100% を超えたらずっと100%を入れ続ける
           if (percent > 100) {
             percent = 100
           }
-          // ボーダーの長さをセット
+
           $(this).children('.border-line').css({
-            height: percent + '%' //CSSでパーセント指定
+            height: percent + '%'
           })
         }
       })
@@ -90,9 +87,9 @@ export default {
 
     function fadeInByScroll(onLeave) {
       $(onLeave ? '.fadein-slide' : '.fadein').each(function() {
-        var targetElement = $(this).offset().top
-        var scroll = $(window).scrollTop()
-        var windowHeight = $(window).height()
+        const targetElement = $(this).offset().top
+        const scroll = $(window).scrollTop()
+        const windowHeight = $(window).height()
         if (scroll > targetElement - windowHeight + 200) {
           $(this).css('opacity', '1')
           $(this).css('transform', 'translateY(0)')
@@ -100,20 +97,10 @@ export default {
       })
     }
 
-    $('#scroll-box').scroll(function() {
+    $('#scroll-box').on('scroll', () => {
       ScrollTimelineAnime()// 線が伸びる関数を呼ぶ
       fadeInByScroll(false)
     })
-
-// // 画面をスクロールをしたら動かしたい場合の記述
-//     $(window).on('scroll', function() {
-//       ScrollTimelineAnime()// 線が伸びる関数を呼ぶ
-//     })
-
-// // ページが読み込まれたらすぐに動かしたい場合の記述
-//     $(window).on('load', function() {
-//       ScrollTimelineAnime()// 線が伸びる関数を呼ぶ
-//     })
   }
 }
 </script>

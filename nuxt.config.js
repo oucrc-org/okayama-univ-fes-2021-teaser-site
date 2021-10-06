@@ -59,12 +59,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    // vendor: ['jquery', 'bootstrap', 'jquery-scrollify'],
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
-        'window.jQuery': 'jquery'
       })
     ]
   },

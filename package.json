@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "cross-env": "NUXT_HOST=0.0.0.0 NUXT_PORT=3333 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -11,10 +12,13 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
+    "bootstrap": "^5.1.1",
     "core-js": "^3.15.1",
     "dayjs": "^1.10.7",
     "nuxt": "^2.15.7",
     "nuxt-webfontloader": "^1.1.0",
+    "pagepiling.js": "^1.5.6",
+    "popper.js": "^1.16.1",
     "vue2-flip-countdown": "^0.11.2"
   },
   "devDependencies": {
@@ -24,10 +28,12 @@
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^4.2.0",
+    "@types/jquery": "^3.5.6",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.12.1",
+    "jquery": "^3.6.0",
     "postcss": "^8.3.5",
     "prettier": "^2.3.2"
   }

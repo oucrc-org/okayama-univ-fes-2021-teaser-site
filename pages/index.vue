@@ -1,20 +1,26 @@
 <template>
-  <main class='bg-themeColor text-white w-screen flex flex-col gap-6 justify-center items-center height-setter'>
+  <main id="pagepiling">
     <div id='splash'>
       <div id='splash_text'></div>
       <div class='loader_cover loader_cover-up'></div>
       <div class='loader_cover loader_cover-down'></div>
     </div>
-    <Countdown />
+    <section
+      class='section bg-themeColor text-white flex flex-col justify-center items-center height-setter'>
+      <Countdown />
+    </section>
+    <TimeLine />
   </main>
 </template>
 
 <script>
 import Countdown from '@/components/Countdown.vue'
+import TimeLine from '@/components/TimeLine.vue'
 
 export default {
   components: {
-    Countdown
+    Countdown,
+    TimeLine
   },
   mounted() {
     const setFillHeight = () => {
@@ -24,6 +30,7 @@ export default {
     window.addEventListener('resize', setFillHeight)
     setFillHeight()
 
+    // noinspection JSUnresolvedVariable
     const bar = new ProgressBar.Line(splash_text, {
       easing: 'easeInOut',
       duration: 1000,
@@ -45,6 +52,7 @@ export default {
         autoStyleContainer: false
       },
       step(_, bar) {
+        // noinspection JSUnresolvedFunction
         bar.setText(Math.round(bar.value() * 100) + ' %')
       }
     })
@@ -75,6 +83,10 @@ html {
 
 .height-setter {
   min-height: 100vh;
+}
+
+/*noinspection ALL*/
+.height-setter {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
@@ -119,11 +131,13 @@ html {
   transform-origin: center bottom;
 }
 
+/*noinspection ALL*/
 .coveranime {
   transform: scaleY(0);
   transition: 5s;
 }
 
+/*noinspection ALL*/
 .fadeout {
   animation: fadeOut 1s;
   animation-fill-mode: both;

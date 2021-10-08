@@ -21,7 +21,7 @@
             <dt class='text-themeColor font-medium'>11/8〜15</dt>
             <h2 class='text-themeColor text-2xl tracking-widest font-bold mt-1'>カウントダウン企画</h2>
             <dd class='text-sm text-gray-500 mt-3 font-medium tracking-widest leading-8'>
-              プロコンサートからステージ企画の間の約1週間も皆様に楽しんでいただけるようにカウントダウン企画を開催します。毎日岡山で活躍中の <b class='font-semibold'>アナウンサーの方の企画紹介動画</b> を投稿するほか、特設サイトでは <b class='font-semibold'>カウントダウンスタンプラリー</b> を開催します。毎日出題されるクイズに正解すると <b class='font-semibold'>豪華景品をプレゼント</b>！ぜひご参加ください！
+              プロコンサートからステージ企画の間の約1週間も皆様に楽しんでいただけるようにカウントダウン企画を開催します。毎日岡山で活躍中の <b class='font-semibold'>アナウンサーの方の企画紹介動画</b> を投稿するほか、特設サイトでは <b class='font-semibold'>カウントダウンスタンプラリー</b> を開催します。毎日出題されるクイズに正解すると <b class='font-semibold'>豪華景品をプレゼント！</b>ぜひご参加ください！
             </dd>
           </dl>
           <span class='border-line'></span>

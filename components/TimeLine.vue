@@ -62,7 +62,7 @@
 
         <hr class='bg-white'>
       </div>
-      <p class='md:text-lg text-white text-center font-japanese font-light mb-10 mt-12'>皆様のご来場お待ちしております</p>
+      <p class='md:text-lg text-white text-center font-japanese font-light mb-10 mt-12 sm:my-28'>皆様のご来場お待ちしております</p>
       <p class='text-xs text-white text-center font-japanese font-extralight font-thin mb-3 md:mb-5 mt-16'>(c) 岡山大学校友会 x 学祭実行委員会</p>
     </div>
   </section>

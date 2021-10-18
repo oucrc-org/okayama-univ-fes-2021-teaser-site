@@ -54,7 +54,14 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    [
+      '@nuxtjs/google-gtag',
+      {
+        id: 'G-GXP2NZBL47',
+        debug: process.env.NODE_ENV !== 'production'
+      }
+    ]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

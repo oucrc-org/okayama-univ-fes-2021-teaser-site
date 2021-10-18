@@ -12,6 +12,7 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
+    "@nuxtjs/google-gtag": "^1.0.4",
     "bootstrap": "^5.1.2",
     "core-js": "^3.18.2",
     "dayjs": "^1.10.7",

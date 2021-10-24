@@ -54,14 +54,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'nuxt-webfontloader',
-    [
-      '@nuxtjs/google-gtag',
-      {
-        id: 'G-GXP2NZBL47',
-        debug: process.env.NODE_ENV !== 'production'
-      }
-    ]
+    'nuxt-webfontloader'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -72,6 +65,12 @@ export default {
         jQuery: 'jquery',
       })
     ]
+  },
+
+  // Google Analytics
+  'google-gtag': {
+    id: 'G-GXP2NZBL47',
+    dev: process.env.NODE_ENV !== 'production'
   },
 
   env: {

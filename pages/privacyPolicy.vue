@@ -4,7 +4,7 @@
       プライバシーポリシー
     </h2>
 
-    <div class='mt-12 px-8'>
+    <div class='mt-12 sm:px-8'>
       <p>
         本サービスにおける、ユーザーについての個人情報を含む利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。
       </p>
@@ -166,6 +166,10 @@ export default {
 }
 
 p {
-  @apply mb-4
+  @apply mb-4 px-8 sm:px-0
+}
+
+ul {
+  @apply px-8 sm:px-0
 }
 </style>

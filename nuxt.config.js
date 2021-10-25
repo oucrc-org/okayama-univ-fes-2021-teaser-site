@@ -70,7 +70,7 @@ export default {
   // Google Analytics
   'google-gtag': {
     id: 'G-GXP2NZBL47',
-    dev: process.env.NODE_ENV !== 'production'
+    dev: false
   },
 
   env: {

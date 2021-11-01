@@ -8,7 +8,7 @@
       <ul class='timeline'>
         <li class='fadein'>
           <dl>
-            <dt class='text-themeColor font-medium'>11/7（日）</dt>
+            <dt class='text-themeColor font-medium'>11/7（日）16:00〜</dt>
             <h2 class='text-themeColor text-2xl tracking-widest font-bold mt-1'>プロコンサート</h2>
             <dd class='text-sm text-gray-500 mt-3 font-medium tracking-widest leading-8'>
               今年度のプロコンサートは お笑い芸人3組をお呼びするプロライブとなっております。現在テレビで引っ張りだこの <b class='font-semibold'>ハナコ、四千頭身、ぼる塾</b> の方々にネタを披露していただきます。<b class='font-semibold'>誰でも無料で視聴</b> することができ、普通のテレビ番組では見ることのできないような <b class='font-semibold'>岡山大学ならではの内容</b> も企画しています。貴重な機会だと思いますので、ぜひともご覧ください！

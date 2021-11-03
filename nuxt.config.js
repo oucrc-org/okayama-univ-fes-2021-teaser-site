@@ -11,13 +11,21 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: '岡山大学祭2021の特設サイトです。今年は「笑顔満祭岡大祭 〜心機一転しちゃいな祭〜」をテーマに、11/7（日）〜11/17（水）の期間中開催されます。岡山大学生が準備したコンテンツをふんだんに披露していきますので、是非この1週間お楽しみいただければと思います。'
+      },
       { name: 'format-detection', content: 'telephone=no' },
-      { hid: 'og:site_name', property: 'og:site_name', content: '岡山大学祭2021 | 笑顔満祭岡大祭 〜心機一転しちゃいな祭〜' },
+      { hid: 'og:site_name', property: 'og:site_name', content: '岡山大学祭2021 特設サイト | 笑顔満祭岡大祭 〜心機一転しちゃいな祭〜' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:url', property: 'og:url', content: 'https://oufes2021.com' },
       { hid: 'og:title', property: 'og:title', content: '岡山大学祭2021' },
-      { hid: 'og:description', property: 'og:description', content: '笑顔満祭岡大祭 〜心機一転しちゃいな祭〜' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: '岡山大学祭2021の特設サイトです。今年は「笑顔満祭岡大祭 〜心機一転しちゃいな祭〜」をテーマに、11/7（日）〜11/17（水）の期間中開催されます。岡山大学生が準備したコンテンツをふんだんに披露していきますので、是非この1週間お楽しみいただければと思います。'
+      },
       {
         hid: 'og:image',
         property: 'og:image',
@@ -34,12 +42,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -69,7 +75,7 @@ export default {
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
-        jQuery: 'jquery',
+        jQuery: 'jquery'
       })
     ]
   },

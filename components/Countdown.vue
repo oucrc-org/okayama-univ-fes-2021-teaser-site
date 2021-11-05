@@ -6,7 +6,7 @@
                        :labels="{ days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds' }" />
       </client-only>
     </div>
-    <div v-else>少々お待ちください...</div>
+    <div v-else class='text-center text-xl'>少々お待ちください...<p class='text-lg'>（再読み込みが必要な場合があります）</p></div>
     <div class='scrolldown'><span>Scroll</span></div>
   </div>
 </template>
